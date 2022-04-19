@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-image: url();
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color:black;
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    font-size: 3vh;
+    justify-content: flex-end;
+    gap: 2vw;
+    padding-left: 40px;
+    height: 5vh;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+.menu a{
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.3vw;
+    margin: 0 auto;
+    padding: 100 0vw;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    padding-left: 33vw;
+}
+
+.heading{
+    font-family: 'Square Peg', cursive;
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: .3vw;
+    padding-top: 5vw;
+}
+.mail{
+    width: 8vh;
+}
+.github{
+    width: 8vh;
+}
+.insta{
+    width: 8vh;
+}
+.head1{
+    font-size: 8vw;
+    padding-top: 3vw;
+    animation: 2s anim-lineUp ease-out ;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+@media only screen and (max-width: 900px){
+   .social_media{
+    flex-direction: column;
+    padding-left: 44vw;
+   }
+   .heading{
+       padding-top: 7vh;
+       font-size: 3vh;
+   }
+   .head1{
+       font-size: 6vh;
+   }
+  }
+  
